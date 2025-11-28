@@ -1,1 +1,14 @@
-
+{
+  "senders": ["your_first_email@gmail.com","your_second_email@gmail.com"],
+  "groups": {
+    "group1": ["recipient1@example.com", "recipient2@example.com"]
+  },
+  "message": {
+    "subject": "Test Email",
+    "content": "this is a test",
+    "load_file": "test.txt",
+    "text_type": "plain"
+  },
+  "server": "smtp.gmail.com",
+  "app_password": "change it"
+}
