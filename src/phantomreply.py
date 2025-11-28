@@ -74,15 +74,6 @@ def load_html_template(filepath):
         print(colored(f"Error reading HTML file {filepath}: {e}", 'red'))
         return None
 
-def load_css(filepath):
-    """Load the CSS stylesheet."""
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            return f.read()
-    except Exception as e:
-        print(colored(f"Error reading CSS file {filepath}: {e}", 'red'))
-        return None
-
 def load_file(filepath):
     """Load the content from a specified file."""
     if os.path.exists(filepath):
@@ -167,7 +158,6 @@ def main():
             return
 
         html_template = load_html_template('templates/email_template.html')
-        css = load_css('static/styles.css')
 
         button_url = input("Enter any URL to attach or leave it empty e.g. https://github.com: ").strip() or 'https://github.com'
         
