@@ -72,7 +72,7 @@ Create or modify:
 ```
 ## Run
 ```bash
-chmod +x setup.sh;./setup.sh
+chmod +x setup.sh;source ./setup.sh
 ```
 
 ## Features
